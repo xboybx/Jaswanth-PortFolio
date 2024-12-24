@@ -6,22 +6,21 @@ const projects = [
 
   {
     title: 'Gen AI',
-    description: 'Real-timeStudent Attendance System to mark attendance online',
+    description: 'Generative Ai, a clone of OpenAI',
     image: "https://a.storyblok.com/f/202591/7680x3000/f839a18e22/what-is-generative-ai2-1.jpg/m/1920x750/filters:format(webp):quality(90)",
     tags: ['Html', 'Css', 'JavaScript', 'React'],
-    longDescription:
-      'The College Student Attendance System allows teachers to mark attendance online. It simplifies the attendance tracking process, providing a user-friendly interface for teachers to mark attendance and for students to view their records.',
-    challenges: [
-      'Real-time Updates: Ensuring immediate updates and notifications for both teachers and students.',
-      'Security: Protecting sensitive data and maintaining access control.',
-      'Usability: Creating an intuitive interface for teachers and students alike.',
+    longDescription: "The Gemini AI Clone simulates AI-powered functionalities like text generation and summarization. It provides a seamless and interactive user interface for exploring AI capabilities."
+    , challenges: [
+      'Real-time Interactions: Ensuring accurate and      responsive AI functionalities.',
+      'API Integration: Managing real-time API calls and data exchange.',
+      'User Experience: Designing an intuitive and visually appealing interface.',
     ],
     solutions: [
-      'Database Integration: Used a database to manage real-time attendance updates.',
-      'Authentication: Implemented secure login mechanisms to protect data.',
-      'Responsive Design: Designed a user-friendly interface that adapts to different devices.',
+      'Efficient API Handling: Integrated Gemini API for smooth AI operations.',
+      'Performance Optimization: Used React for modular and reusable components.',
+      'Responsive Design: Ensured cross-device compatibility for a better user experience.'
     ],
-    githubUrl: 'https://github.com/xboybx/Students-Attendance-System',
+    githubUrl: 'https://github.com/xboybx/GEN-AI_Clone',
     liveUrl: 'https://xboybx.github.io/GEN-AI_Clone/',
   },
 
@@ -48,20 +47,19 @@ const projects = [
 
   {
     title: 'Gps track',
-    description: 'Real-timeStudent Attendance System to mark attendance online',
+    description: 'It Tracks the User\'s Location on a Map',
     image: 'https://static.vecteezy.com/system/resources/thumbnails/022/966/737/small_2x/urban-city-map-town-streets-gps-navigation-downtown-map-with-roads-parks-and-river-abstract-roadmap-navigations-scheme-illustration-vector.jpg',
     tags: ['Html', 'Css', 'JavaScript', 'Express'],
     longDescription:
-      'The College Student Attendance System allows teachers to mark attendance online. It simplifies the attendance tracking process, providing a user-friendly interface for teachers to mark attendance and for students to view their records.',
+      'The Map Locator is a web-based application that identifies and displays the user\'s current location on a map using GPS and geolocation APIs.',
     challenges: [
-      'Real-time Updates: Ensuring immediate updates and notifications for both teachers and students.',
-      'Security: Protecting sensitive data and maintaining access control.',
-      'Usability: Creating an intuitive interface for teachers and students alike.',
+      'Geolocation Accuracy: Ensuring precise location tracking.',
+      'API Integration: Integrating map services for real-time visualization.',
+      'Cross-Browser Compatibility: Handling geolocation features across various browsers.',
     ],
     solutions: [
-      'Database Integration: Used a database to manage real-time attendance updates.',
-      'Authentication: Implemented secure login mechanisms to protect data.',
-      'Responsive Design: Designed a user-friendly interface that adapts to different devices.',
+      'Geolocation API: Used to fetch the user\'s current coordinates.',
+      'Leaflet.js Integration: Displayed location on an interactive map.',
     ],
     githubUrl: 'https://github.com/xboybx/GpsTrack',
     liveUrl: 'https://xboybx.github.io/GpsTrack/',
@@ -91,20 +89,19 @@ const projects = [
 
   {
     title: 'Notes App',
-    description: 'Real-timeStudent Attendance System to mark attendance online',
+    description: 'Notes app to create, edit, and delete notes',
     image: 'https://c7.alamy.com/comp/2JTAKG6/young-woman-uses-digital-planner-creates-pins-notes-tables-and-personal-calendar-sits-at-her-desk-at-home-uses-note-taking-app-on-her-notebook-2JTAKG6.jpg',
     tags: ['Html', 'Css', 'JavaScript', 'React', 'MongoDB'],
     longDescription:
-      'The College Student Attendance System allows teachers to mark attendance online. It simplifies the attendance tracking process, providing a user-friendly interface for teachers to mark attendance and for students to view their records.',
+      'The Notes App is a React-based application inspired by Google Keep. It allows users to create, edit, and delete notes with an intuitive and minimalistic design.',
     challenges: [
-      'Real-time Updates: Ensuring immediate updates and notifications for both teachers and students.',
-      'Security: Protecting sensitive data and maintaining access control.',
-      'Usability: Creating an intuitive interface for teachers and students alike.',
+      'State Management: Handling dynamic addition and deletion of notes.',
+      'User Interaction: Providing a seamless editing experience.',
+      'Design Consistency: Mimicking Google Keep\'s visual simplicity.',
     ],
     solutions: [
-      'Database Integration: Used a database to manage real-time attendance updates.',
-      'Authentication: Implemented secure login mechanisms to protect data.',
-      'Responsive Design: Designed a user-friendly interface that adapts to different devices.',
+      'Dynamic Components: Used React state and props to manage note interactions.',
+      'Local Storage: Implemented data persistence for user convenience.',
     ],
     githubUrl: 'https://github.com/xboybx/Notes-App',
     liveUrl: 'https://xboybx.github.io/Notes-App/',

@@ -20,9 +20,10 @@ function Hero({ onNavigate }) {
                 }}
                 className="self-center md:self-start mb-8 md:mb-0 md:mt-4"
               >
-                <div className="relative">
+                <div className="relative" style={{ transform: 'translate(0px, 30px)' }}>
                   <motion.div
                     animate={{
+
                       scale: [1, 1.05, 1],
                       rotate: [0, -3, 3, 0],
                     }}
@@ -54,6 +55,8 @@ function Hero({ onNavigate }) {
                   />
                 </div>
               </motion.div>
+              <br />
+
 
               {/* Content */}
               <motion.div
