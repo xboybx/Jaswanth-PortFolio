@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
@@ -30,7 +31,7 @@ function App() {
       <Background />
 
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 w-full z-50 px-8 py-6 glass-card bg-white/80 backdrop-blur-lg">
+      <nav className="fixed top-0 left-0 w-full z-50 px-8 py-6 bg-white/80 backdrop-blur-lg">
         <div className="container mx-auto flex justify-between items-center">
           <motion.h1
             initial={{ opacity: 0 }}
@@ -48,8 +49,8 @@ function App() {
                 key={section.id}
                 onClick={() => navigateToSection(section.id)}
                 className={`text-sm font-medium tracking-wide transition-colors ${currentSection === section.id
-                  ? 'text-lavender-700'
-                  : 'text-gray-600 hover:text-lavender-600'
+                    ? 'text-lavender-700'
+                    : 'text-gray-600 hover:text-lavender-600'
                   }`}
               >
                 {section.label}
@@ -68,17 +69,21 @@ function App() {
       <motion.div
         initial={false}
         animate={{ opacity: isMenuOpen ? 1 : 0, y: isMenuOpen ? 0 : -20 }}
-        className={`fixed inset-0 glass-card z-40 md:hidden pt-24 ${isMenuOpen ? 'block' : 'hidden'
+        className={`fixed inset-0 z-40 md:hidden ${isMenuOpen ? 'block' : 'hidden'
           }`}
       >
-        <div className="flex flex-col items-center justify-center h-full space-y-8">
+        {/* Backdrop */}
+        <div className="absolute inset-0 bg-white/95 backdrop-blur-lg" />
+
+        {/* Menu Items */}
+        <div className="relative flex flex-col items-center justify-center h-full space-y-8">
           {sections.map((section) => (
             <button
               key={section.id}
               onClick={() => navigateToSection(section.id)}
-              className={`text-2xl font-medium ${currentSection === section.id
-                ? 'text-lavender-700'
-                : 'text-gray-600'
+              className={`text-2xl font-medium transition-colors ${currentSection === section.id
+                  ? 'text-pink-600'
+                  : 'text-gray-600 hover:text-pink-600'
                 }`}
             >
               {section.label}
@@ -105,3 +110,9 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+

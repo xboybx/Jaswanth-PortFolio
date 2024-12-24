@@ -3,6 +3,112 @@ import { useState } from 'react';
 import ProjectDetails from './ProjectDetails';
 
 const projects = [
+
+  {
+    title: 'Gen AI',
+    description: 'Real-timeStudent Attendance System to mark attendance online',
+    image: "https://a.storyblok.com/f/202591/7680x3000/f839a18e22/what-is-generative-ai2-1.jpg/m/1920x750/filters:format(webp):quality(90)",
+    tags: ['Html', 'Css', 'JavaScript', 'React'],
+    longDescription:
+      'The College Student Attendance System allows teachers to mark attendance online. It simplifies the attendance tracking process, providing a user-friendly interface for teachers to mark attendance and for students to view their records.',
+    challenges: [
+      'Real-time Updates: Ensuring immediate updates and notifications for both teachers and students.',
+      'Security: Protecting sensitive data and maintaining access control.',
+      'Usability: Creating an intuitive interface for teachers and students alike.',
+    ],
+    solutions: [
+      'Database Integration: Used a database to manage real-time attendance updates.',
+      'Authentication: Implemented secure login mechanisms to protect data.',
+      'Responsive Design: Designed a user-friendly interface that adapts to different devices.',
+    ],
+    githubUrl: 'https://github.com/xboybx/Students-Attendance-System',
+    liveUrl: 'https://xboybx.github.io/GEN-AI_Clone/',
+  },
+
+  {
+    title: 'Student Attendance System',
+    description: 'Real-timeStudent Attendance System to mark attendance online',
+    image: "https://img.freepik.com/free-vector/appointment-booking-with-calendar_23-2148556782.jpg ",
+    tags: ['Html', 'Css', 'JavaScript', 'React'],
+    longDescription:
+      'The College Student Attendance System allows teachers to mark attendance online. It simplifies the attendance tracking process, providing a user-friendly interface for teachers to mark attendance and for students to view their records.',
+    challenges: [
+      'Real-time Updates: Ensuring immediate updates and notifications for both teachers and students.',
+      'Security: Protecting sensitive data and maintaining access control.',
+      'Usability: Creating an intuitive interface for teachers and students alike.',
+    ],
+    solutions: [
+      'Database Integration: Used a database to manage real-time attendance updates.',
+      'Authentication: Implemented secure login mechanisms to protect data.',
+      'Responsive Design: Designed a user-friendly interface that adapts to different devices.',
+    ],
+    githubUrl: 'https://github.com/xboybx/Students-Attendance-System',
+    liveUrl: 'https://example.com',
+  },
+
+  {
+    title: 'Gps track',
+    description: 'Real-timeStudent Attendance System to mark attendance online',
+    image: 'https://static.vecteezy.com/system/resources/thumbnails/022/966/737/small_2x/urban-city-map-town-streets-gps-navigation-downtown-map-with-roads-parks-and-river-abstract-roadmap-navigations-scheme-illustration-vector.jpg',
+    tags: ['Html', 'Css', 'JavaScript', 'Express'],
+    longDescription:
+      'The College Student Attendance System allows teachers to mark attendance online. It simplifies the attendance tracking process, providing a user-friendly interface for teachers to mark attendance and for students to view their records.',
+    challenges: [
+      'Real-time Updates: Ensuring immediate updates and notifications for both teachers and students.',
+      'Security: Protecting sensitive data and maintaining access control.',
+      'Usability: Creating an intuitive interface for teachers and students alike.',
+    ],
+    solutions: [
+      'Database Integration: Used a database to manage real-time attendance updates.',
+      'Authentication: Implemented secure login mechanisms to protect data.',
+      'Responsive Design: Designed a user-friendly interface that adapts to different devices.',
+    ],
+    githubUrl: 'https://github.com/xboybx/GpsTrack',
+    liveUrl: 'https://xboybx.github.io/GpsTrack/',
+  },
+  {
+    title: 'Minimal Wallet',
+    description:
+      'The Minimal Wallet is a simple financial tracker that allows users to simulate deposits and withdrawals',
+    image:
+      "https://designtemplate.tech/tue-jan-10-2023-2-28-pm29917.webp",
+    tags: ['Html', 'Css', 'JavaScript'],
+    longDescription:
+      'The project is a lightweight financial tracker allowing users to simulate deposits, withdrawals, and view balances. It has a simple, user-focused interface with clear input fields and interactive buttons',
+    challenges: [
+      'Dynamic Calculation: Ensuring accurate updates to balances based on user actions.',
+      'Error Handling: Managing invalid inputs or negative balances effectively.',
+      'User Engagement: Creating a visually appealing and intuitive UI.',
+    ],
+    solutions: [
+      'Interactive JavaScript Logic: Handles deposits/withdrawals seamlessly.',
+      'Input Validation: Could be improved to handle user errors.',
+      'Minimal Design: Focuses on simplicity and usability.',
+    ],
+    githubUrl: 'https://github.com/xboybx/Minimal-Wallet',
+    liveUrl: 'https://xboybx.github.io/Minimal-Wallet/',
+  },
+
+  {
+    title: 'Notes App',
+    description: 'Real-timeStudent Attendance System to mark attendance online',
+    image: 'https://c7.alamy.com/comp/2JTAKG6/young-woman-uses-digital-planner-creates-pins-notes-tables-and-personal-calendar-sits-at-her-desk-at-home-uses-note-taking-app-on-her-notebook-2JTAKG6.jpg',
+    tags: ['Html', 'Css', 'JavaScript', 'React', 'MongoDB'],
+    longDescription:
+      'The College Student Attendance System allows teachers to mark attendance online. It simplifies the attendance tracking process, providing a user-friendly interface for teachers to mark attendance and for students to view their records.',
+    challenges: [
+      'Real-time Updates: Ensuring immediate updates and notifications for both teachers and students.',
+      'Security: Protecting sensitive data and maintaining access control.',
+      'Usability: Creating an intuitive interface for teachers and students alike.',
+    ],
+    solutions: [
+      'Database Integration: Used a database to manage real-time attendance updates.',
+      'Authentication: Implemented secure login mechanisms to protect data.',
+      'Responsive Design: Designed a user-friendly interface that adapts to different devices.',
+    ],
+    githubUrl: 'https://github.com/xboybx/Notes-App',
+    liveUrl: 'https://xboybx.github.io/Notes-App/',
+  },
   {
     title: 'To-Do List',
     description:
@@ -24,111 +130,6 @@ const projects = [
     ],
     githubUrl: 'https://github.com/xboybx/To-Do',
     liveUrl: 'https://xboybx.github.io/To-Do/',
-  },
-  {
-    title: 'Minimal Wallet',
-    description:
-      'The Minimal Wallet is a simple financial tracker that allows users to simulate deposits and withdrawals',
-    image:
-      'https://ideogram.ai/assets/progressive-image/balanced/response/vMWgrqN5QYSi9HbLwUqRzw',
-    tags: ['Html', 'Css', 'JavaScript'],
-    longDescription:
-      'The project is a lightweight financial tracker allowing users to simulate deposits, withdrawals, and view balances. It has a simple, user-focused interface with clear input fields and interactive buttons',
-    challenges: [
-      'Dynamic Calculation: Ensuring accurate updates to balances based on user actions.',
-      'Error Handling: Managing invalid inputs or negative balances effectively.',
-      'User Engagement: Creating a visually appealing and intuitive UI.',
-    ],
-    solutions: [
-      'Interactive JavaScript Logic: Handles deposits/withdrawals seamlessly.',
-      'Input Validation: Could be improved to handle user errors.',
-      'Minimal Design: Focuses on simplicity and usability.',
-    ],
-    githubUrl: 'https://github.com/xboybx/Minimal-Wallet',
-    liveUrl: 'https://xboybx.github.io/Minimal-Wallet/',
-  },
-  {
-    title: 'Student Attendance System',
-    description: 'Real-timeStudent Attendance System to mark attendance online',
-    image: "https://img.freepik.com/free-vector/appointment-booking-with-calendar_23-2148556782.jpg ",
-    tags: ['Html', 'Css', 'JavaScript', 'React', 'MongoDB'],
-    longDescription:
-      'The College Student Attendance System allows teachers to mark attendance online. It simplifies the attendance tracking process, providing a user-friendly interface for teachers to mark attendance and for students to view their records.',
-    challenges: [
-      'Real-time Updates: Ensuring immediate updates and notifications for both teachers and students.',
-      'Security: Protecting sensitive data and maintaining access control.',
-      'Usability: Creating an intuitive interface for teachers and students alike.',
-    ],
-    solutions: [
-      'Database Integration: Used a database to manage real-time attendance updates.',
-      'Authentication: Implemented secure login mechanisms to protect data.',
-      'Responsive Design: Designed a user-friendly interface that adapts to different devices.',
-    ],
-    githubUrl: 'https://github.com/xboybx/Students-Attendance-System',
-    liveUrl: 'https://example.com',
-  },
-
-  {
-    title: 'Notes App',
-    description: 'Real-timeStudent Attendance System to mark attendance online',
-    image: 'https://c7.alamy.com/comp/2JTAKG6/young-woman-uses-digital-planner-creates-pins-notes-tables-and-personal-calendar-sits-at-her-desk-at-home-uses-note-taking-app-on-her-notebook-2JTAKG6.jpg',
-    tags: ['Html', 'Css', 'JavaScript', 'React', 'MongoDB'],
-    longDescription:
-      'The College Student Attendance System allows teachers to mark attendance online. It simplifies the attendance tracking process, providing a user-friendly interface for teachers to mark attendance and for students to view their records.',
-    challenges: [
-      'Real-time Updates: Ensuring immediate updates and notifications for both teachers and students.',
-      'Security: Protecting sensitive data and maintaining access control.',
-      'Usability: Creating an intuitive interface for teachers and students alike.',
-    ],
-    solutions: [
-      'Database Integration: Used a database to manage real-time attendance updates.',
-      'Authentication: Implemented secure login mechanisms to protect data.',
-      'Responsive Design: Designed a user-friendly interface that adapts to different devices.',
-    ],
-    githubUrl: 'https://github.com/xboybx/Students-Attendance-System',
-    liveUrl: 'https://example.com',
-  },
-
-  {
-    title: 'Gen AI',
-    description: 'Real-timeStudent Attendance System to mark attendance online',
-    image: "https://a.storyblok.com/f/202591/7680x3000/f839a18e22/what-is-generative-ai2-1.jpg/m/1920x750/filters:format(webp):quality(90)",
-    tags: ['Html', 'Css', 'JavaScript', 'React', 'MongoDB'],
-    longDescription:
-      'The College Student Attendance System allows teachers to mark attendance online. It simplifies the attendance tracking process, providing a user-friendly interface for teachers to mark attendance and for students to view their records.',
-    challenges: [
-      'Real-time Updates: Ensuring immediate updates and notifications for both teachers and students.',
-      'Security: Protecting sensitive data and maintaining access control.',
-      'Usability: Creating an intuitive interface for teachers and students alike.',
-    ],
-    solutions: [
-      'Database Integration: Used a database to manage real-time attendance updates.',
-      'Authentication: Implemented secure login mechanisms to protect data.',
-      'Responsive Design: Designed a user-friendly interface that adapts to different devices.',
-    ],
-    githubUrl: 'https://github.com/xboybx/Students-Attendance-System',
-    liveUrl: 'https://example.com',
-  },
-
-  {
-    title: 'Spotify Clone',
-    description: 'Real-timeStudent Attendance System to mark attendance online',
-    image: 'https://mir-s3-cdn-cf.behance.net/projects/404/249e5a156863869.Y3JvcCwxNTgwLDEyMzYsMzg3LDA.png',
-    tags: ['Html', 'Css', 'JavaScript', 'React', 'MongoDB'],
-    longDescription:
-      'The College Student Attendance System allows teachers to mark attendance online. It simplifies the attendance tracking process, providing a user-friendly interface for teachers to mark attendance and for students to view their records.',
-    challenges: [
-      'Real-time Updates: Ensuring immediate updates and notifications for both teachers and students.',
-      'Security: Protecting sensitive data and maintaining access control.',
-      'Usability: Creating an intuitive interface for teachers and students alike.',
-    ],
-    solutions: [
-      'Database Integration: Used a database to manage real-time attendance updates.',
-      'Authentication: Implemented secure login mechanisms to protect data.',
-      'Responsive Design: Designed a user-friendly interface that adapts to different devices.',
-    ],
-    githubUrl: 'https://github.com/xboybx/Students-Attendance-System',
-    liveUrl: 'https://example.com',
   }
 ];
 
