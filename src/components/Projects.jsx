@@ -42,7 +42,7 @@ const projects = [
       'Responsive Design: Designed a user-friendly interface that adapts to different devices.',
     ],
     githubUrl: 'https://github.com/xboybx/Student-Attendance-System',
-    liveUrl: 'https://xboybx.github.io/Student-Attendance-System/login',
+    liveUrl: 'https://xboybx.github.io/Student-Attendance-System/',
   },
 
   {
@@ -65,9 +65,9 @@ const projects = [
     liveUrl: 'https://xboybx.github.io/GpsTrack/',
   },
   {
-    title: 'Minimal Wallet',
+    title: 'Wallet-piggyBank',
     description:
-      'The Minimal Wallet is a simple financial tracker that allows users to simulate deposits and withdrawals',
+      'The Wallet is a simple financial tracker that allows users to simulate deposits and withdrawals and acts as PiggyBank',
     image:
       "https://designtemplate.tech/tue-jan-10-2023-2-28-pm29917.webp",
     tags: ['Html', 'Css', 'JavaScript'],
@@ -83,8 +83,8 @@ const projects = [
       'Input Validation: Could be improved to handle user errors.',
       'Minimal Design: Focuses on simplicity and usability.',
     ],
-    githubUrl: 'https://github.com/xboybx/Minimal-Wallet',
-    liveUrl: 'https://xboybx.github.io/Minimal-Wallet/',
+    githubUrl: 'https://github.com/xboybx/Wallet-PiggyBank',
+    liveUrl: 'https://xboybx.github.io/Wallet-PiggyBank/',
   },
 
   {
