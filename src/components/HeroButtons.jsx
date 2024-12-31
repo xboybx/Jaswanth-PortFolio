@@ -38,18 +38,21 @@ export function HeroButtons({ onNavigate }) {
 
 
       {/* github button */}
-      <button
+      <a href="https://github.com/xboybx">   <button
         className="btn-primary flex items-center gap-2" style={{ backgroundColor: "#2c2c2c" }}
       >
-        <a href="https://github.com/xboybx"><i class="fa-brands fa-github"></i></a>
-      </button>
+        <i class="fa-brands fa-github"></i>
+      </button></a>
+
 
       {/* linkedin button */}
-      <button
+      <a href="https://www.linkedin.com/in/jjaswanth"> <button
         className="btn-primary flex items-center gap-2" style={{ backgroundColor: "#0072b1" }}
       >
-        <a href="https://www.linkedin.com/in/jjaswanth"><i class="fa-brands fa-linkedin-in"></i></a>
-      </button>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </button></a>
+
+
     </div>
   );
 }
