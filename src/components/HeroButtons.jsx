@@ -35,6 +35,21 @@ export function HeroButtons({ onNavigate }) {
         <span>View Projects</span>
         <ArrowRight className="w-4 h-4" />
       </button>
+
+
+      {/* github button */}
+      <button
+        className="btn-primary flex items-center gap-2" style={{ backgroundColor: "#2c2c2c" }}
+      >
+        <a href="https://github.com/xboybx"><i class="fa-brands fa-github"></i></a>
+      </button>
+
+      {/* linkedin button */}
+      <button
+        className="btn-primary flex items-center gap-2" style={{ backgroundColor: "#0072b1" }}
+      >
+        <a href="https://www.linkedin.com/in/jjaswanth"><i class="fa-brands fa-linkedin-in"></i></a>
+      </button>
     </div>
   );
 }
