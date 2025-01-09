@@ -23,7 +23,29 @@ const projects = [
     githubUrl: 'https://github.com/xboybx/GEN-AI_Clone',
     liveUrl: 'https://xboybx.github.io/GEN-AI_Clone/',
   },
+  {
+    title: 'Employee Management System',
+    description: 'Employee Management System to track & manage employee tasks',
+    image: "https://leapmax.ai/wp-content/uploads/2024/10/employee-management-system.webp",
+    tags: ['Html', 'Css', 'JavaScript', 'React'],
+    longDescription:
+      'The Employee Management System allows administrators to manage employee tasks and track their progress. It simplifies the task management process, providing a user-friendly interface for administrators to assign tasks and for employees to view their task records. The system also includes a robust login system, task analytics, and task details.',
+    challenges: [
+      'Task Assignment: Assigning tasks to employees and tracking their progress in real-time.',
+      'Security: Protecting sensitive data and maintaining access control.',
+      'Scalability: Ensuring the system can handle a large number of users and tasks.',
+    ],
+    solutions: [
+      'Task Assignment Algorithm: Implemented a task assignment algorithm to assign tasks to employees based on their availability and skill set.',
+      'Secure Authentication: Used a secure authentication library to authenticate users and protect data.',
+      'Scalable Architecture: Designed a scalable architecture to handle a large number of users and tasks.',
+    ],
+    githubUrl: 'https://github.com/xboybx/Employee-Managment-System',
+    liveUrl: 'https://xboybx.github.io/Employee-Managment-System/',
+  }
 
+
+  ,
   {
     title: 'Student Attendance System',
     description: 'Real-timeStudent Attendance System to mark attendance online',
