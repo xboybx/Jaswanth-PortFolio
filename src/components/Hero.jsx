@@ -35,7 +35,7 @@ function Hero({ onNavigate }) {
                   style={{ borderColor: '#ea4c89' }}
                 >
                   <img
-                    src="https://media.licdn.com/dms/image/v2/D4D03AQEzl1O1refb9A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1693640468613?e=2147483647&v=beta&t=xKKy-3-UhrDZmKVQlMBHoWKo_HXYq5ci8oN8W37s_-E"
+                    src="./jaswanthh.jpg"
                     alt="Profile"
                     className="w-full h-full object-cover"
                   />

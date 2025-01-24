@@ -63,8 +63,8 @@ const projects = [
       'Authentication: Implemented secure login mechanisms to protect data.',
       'Responsive Design: Designed a user-friendly interface that adapts to different devices.',
     ],
-    githubUrl: 'https://github.com/xboybx/Student-Attendance-System',
-    liveUrl: 'https://xboybx.github.io/Student-Attendance-System/',
+    githubUrl: 'https://github.com/xboybx/Students-Attendance-System-V2',
+    liveUrl: 'https://github.com/xboybx/Students-Attendance-System-V2',
   },
 
   {
