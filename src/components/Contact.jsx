@@ -79,7 +79,7 @@ function Contact() {
                   <div className="p-3 rounded-full bg-lavender-500/10 border border-lavender-500/20">
                     <Mail className="text-lavender-600" />
                   </div>
-                  <span className="text-gray-600">jeswanth012@example.com</span>
+                  <span className="text-gray-600">j.jaswanth@icloud.com</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <div className="p-3 rounded-full bg-lavender-500/10 border border-lavender-500/20">
