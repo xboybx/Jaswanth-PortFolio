@@ -21,7 +21,7 @@ const projects = [
       'Responsive Design: Ensured cross-device compatibility for a better user experience.'
     ],
     githubUrl: 'https://github.com/xboybx/GEN-AI_Clone',
-    liveUrl: 'gen-ai-clone.netlify.app',
+    liveUrl: 'https://gen-ai-clone.netlify.app/',
   },
   {
     title: 'Employee Management System',
@@ -64,7 +64,7 @@ const projects = [
       'Responsive Design: Designed a user-friendly interface that adapts to different devices.',
     ],
     githubUrl: 'https://github.com/xboybx/Students-Attendance-System-V2',
-    liveUrl: 'https://students-attendance-systems.netlify.app/login',
+    liveUrl: 'https://students-attendance-systems.netlify.app/',
   },
 
   {
