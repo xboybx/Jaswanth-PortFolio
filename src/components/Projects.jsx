@@ -21,7 +21,7 @@ const projects = [
       'Responsive Design: Ensured cross-device compatibility for a better user experience.'
     ],
     githubUrl: 'https://github.com/xboybx/GEN-AI_Clone',
-    liveUrl: 'https://xboybx.github.io/GEN-AI_Clone/',
+    liveUrl: 'gen-ai-clone.netlify.app',
   },
   {
     title: 'Employee Management System',
@@ -41,7 +41,7 @@ const projects = [
       'Scalable Architecture: Designed a scalable architecture to handle a large number of users and tasks.',
     ],
     githubUrl: 'https://github.com/xboybx/Employee-Managment-System',
-    liveUrl: 'https://xboybx.github.io/Employee-Managment-System/',
+    liveUrl: 'https://employe-mangment-system.netlify.app/',
   }
 
 
@@ -64,7 +64,7 @@ const projects = [
       'Responsive Design: Designed a user-friendly interface that adapts to different devices.',
     ],
     githubUrl: 'https://github.com/xboybx/Students-Attendance-System-V2',
-    liveUrl: 'https://github.com/xboybx/Students-Attendance-System-V2',
+    liveUrl: 'https://students-attendance-systems.netlify.app/login',
   },
 
   {
@@ -106,7 +106,7 @@ const projects = [
       'Minimal Design: Focuses on simplicity and usability.',
     ],
     githubUrl: 'https://github.com/xboybx/Wallet-PiggyBank',
-    liveUrl: 'https://xboybx.github.io/Wallet-PiggyBank/',
+    liveUrl: 'https://piggy-wallet.netlify.app/',
   },
 
   {
