@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Lanyard from "../../ReactBits/Lanyard/Lanyard";
+import { lazy, Suspense } from "react";
+
+const Lanyard = lazy(() => import("../../ReactBits/Lanyard/Lanyard"));
 
 function Hero() {
   const [ref, inView] = useInView({
@@ -43,9 +45,16 @@ function Hero() {
         <motion.div
           variants={itemVariants}
           className="lg:hidden w-full h-[350px] flex items-center justify-center relative"
+          style={{ touchAction: "none" }}
         >
           <div className="absolute inset-0 z-10 flex items-center justify-center">
-            <Lanyard cardScale={1.2} />
+            <Suspense
+              fallback={
+                <div className="w-16 h-16 animate-spin border-4 border-accent border-t-transparent rounded-full"></div>
+              }
+            >
+              <Lanyard cardScale={1.2} />
+            </Suspense>
           </div>
         </motion.div>
 
@@ -111,7 +120,13 @@ function Hero() {
         {/* Lanyard Animation for Desktop (overlay only left column) */}
         <div className="relative hidden lg:block w-full h-screen min-h-[600px] max-h-none mt-[-90px]">
           <div className="absolute inset-0 z-[20] pointer-events-auto flex items-center justify-center">
-            <Lanyard cardScale={2.2} />
+            <Suspense
+              fallback={
+                <div className="w-20 h-20 animate-spin border-4 border-accent border-t-transparent rounded-full"></div>
+              }
+            >
+              <Lanyard cardScale={2.2} />
+            </Suspense>
           </div>
           {/* The red background and other content remain here if needed */}
         </div>
