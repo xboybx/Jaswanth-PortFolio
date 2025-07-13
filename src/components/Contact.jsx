@@ -51,7 +51,7 @@ function Contact() {
                 </label>
                 <input
                   type="text"
-                  className="w-full px-4 py-3 rounded-xl bg-white/5 backdrop-blur-sm 
+                  className="w-full px-4 py-3 rounded-xl bg-white/5 backdrop-blur-sm
                            border-2 border-lavender-200 focus:border-lavender-400
                            focus:ring-4 focus:ring-lavender-400/20
                            transition-all duration-200 outline-none"
@@ -66,7 +66,7 @@ function Contact() {
                 </label>
                 <input
                   type="email"
-                  className="w-full px-4 py-3 rounded-xl bg-white/5 backdrop-blur-sm 
+                  className="w-full px-4 py-3 rounded-xl bg-white/5 backdrop-blur-sm
                            border-2 border-lavender-200 focus:border-lavender-400
                            focus:ring-4 focus:ring-lavender-400/20
                            transition-all duration-200 outline-none"
@@ -80,7 +80,7 @@ function Contact() {
                   Message
                 </label>
                 <textarea
-                  className="w-full px-4 py-3 rounded-xl bg-white/5 backdrop-blur-sm 
+                  className="w-full px-4 py-3 rounded-xl bg-white/5 backdrop-blur-sm
                            border-2 border-lavender-200 focus:border-lavender-400
                            focus:ring-4 focus:ring-lavender-400/20
                            transition-all duration-200 outline-none h-32 resize-none"
