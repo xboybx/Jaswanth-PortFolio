@@ -34,7 +34,7 @@ export default function Lanyard({
   transparent = true,
 }) {
   return (
-    <div className="absolute inset-0 z-[999] w-full h-full flex justify-center items-center origin-center ">
+    <div className="  absolute inset-0 z-[999] w-full h-full flex justify-center items-center origin-center">
       <Canvas
         camera={{ position: position, fov: fov }}
         gl={{ alpha: transparent }}
@@ -193,7 +193,7 @@ function Band({ maxSpeed = 50, minSpeed = 0 }) {
 
   return (
     <>
-      <group position={[0, 4, 0]}>
+      <group position={isSmall ? [0, 5.5, 1] : [0, 4, 0]}>
         <RigidBody ref={fixed} {...segmentProps} type="fixed" />
         <RigidBody position={[0.5, 0, 0]} ref={j1} {...segmentProps}>
           <BallCollider args={[0.1]} />
@@ -212,7 +212,7 @@ function Band({ maxSpeed = 50, minSpeed = 0 }) {
         >
           <CuboidCollider args={[0.8, 1.125, 0.01]} />
           <group
-            scale={[4.9, 4.5, 4.5]}
+            scale={isSmall ? [4.9, 4.5, 4.5] : [4.9, 4.5, 4.5]}
             position={[0, -4, 0]}
             onPointerOver={() => hover(true)}
             onPointerOut={() => hover(false)}

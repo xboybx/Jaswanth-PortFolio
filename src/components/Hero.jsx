@@ -48,18 +48,21 @@ function Hero() {
             {/* Lanyard for Mobile/Tablet - Above content */}
             <motion.div
               variants={itemVariants}
-              className="w-full h-[250px] sm:h-[300px] md:h-[350px] flex items-center justify-center"
+              className="w-full h-[300px] sm:h-[300px] md:h-[450px] flex items-center justify-center "
             >
               <div className="relative w-full h-full">
                 <Suspense
                   fallback={
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 animate-spin border-4 border-accent border-t-transparent rounded-full"></div>
+                    <div className="absolute inset-0 flex items-center justify-center bg-gray-900/10 rounded-xl ">
+                      <div className="w-16 h-16 animate-spin border-4 border-accent border-t-transparent rounded-full"></div>
+                    </div>
                   }
                 >
                   <Lanyard
-                    position={[0, 0, 25]}
-                    fov={25}
+                    position={[0, 0, 15]}
+                    fov={30}
                     gravity={[0, -30, 0]}
+                    scale={1.5}
                   />
                 </Suspense>
               </div>
@@ -196,7 +199,9 @@ function Hero() {
               <div className="absolute inset-0 z-[20] pointer-events-auto flex items-center justify-center mt-[-50px]">
                 <Suspense
                   fallback={
-                    <div className=" w-20 h-20 animate-spin border-4 border-accent border-t-transparent rounded-full"></div>
+                    <div className="absolute inset-0 flex items-center justify-center bg-gray-900/10 rounded-xl">
+                      <div className="w-20 h-20 animate-spin border-4 border-accent border-t-transparent rounded-full"></div>
+                    </div>
                   }
                 >
                   <Lanyard

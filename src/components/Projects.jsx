@@ -148,7 +148,7 @@ const projects = [
     description:
       "The Wallet is a simple financial tracker that allows users to simulate deposits and withdrawals and acts as PiggyBank",
     image:
-      "https://media.istockphoto.com/id/1648431168/vector/business-wealth-and-financial-investment-concept-people-saving-money-in-piggy-bank-flat.jpg?s=612x612&w=0&k=20&c=jBKj1n2xy8a3Z_GGCxoAOQ683jGRQ1RZjNvczuzye-s=",
+      "https://unblast.com/wp-content/uploads/2022/08/Piggy-Bank-Illustration.jpg",
     tags: ["Html", "Css", "JavaScript"],
     longDescription:
       "The project is a lightweight financial tracker allowing users to simulate deposits, withdrawals, and view balances. It has a simple, user-focused interface with clear input fields and interactive buttons",
@@ -276,7 +276,7 @@ function Projects() {
 
               <div className="p-6 space-y-4">
                 <h3 className="text-xl font-bold text-text-secondary group-hover:text-accent transition-colors flex items-center gap-2">
-                  <span className="sm:hidden">
+                  <span className="sm:hidden text-accent">
                     {project.title.includes("Manage Team") ? (
                       <FaTasks />
                     ) : project.title.includes("AI CollabSphere") ? (
@@ -304,7 +304,10 @@ function Projects() {
                 <p className="text-text-primary line-clamp-2 hidden sm:block">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 sm:hidden">
+                  <p className="text-text-primary">{project.description}</p>
+                </div>
+                <div className="hidden sm:flex flex-wrap gap-2">
                   {project.tags.map((tag, tagIndex) => (
                     <span
                       key={tagIndex}

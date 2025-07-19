@@ -20,6 +20,29 @@ function App() {
     });
   }, [scrollY]);
 
+  // Preload Lanyard component chunk early to improve first load time
+  useEffect(() => {
+    import("../ReactBits/Lanyard/Lanyard").then((module) => {
+      // Warm up the component by creating an instance
+      const Lanyard = module.default;
+      const tempDiv = document.createElement("div");
+      document.body.appendChild(tempDiv);
+
+      const root = ReactDOM.createRoot(tempDiv);
+      root.render(
+        <React.Suspense fallback={null}>
+          <Lanyard />
+        </React.Suspense>
+      );
+
+      // Remove after a short delay
+      setTimeout(() => {
+        root.unmount();
+        document.body.removeChild(tempDiv);
+      }, 1000);
+    });
+  }, []);
+
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const scrollToSection = (sectionId) => {
@@ -64,13 +87,14 @@ function App() {
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
             {sections.map((section) => (
-              <button
+              <a
                 key={section.id}
-                onClick={() => scrollToSection(section.id)}
-                className="text-sm font-medium tracking-wide transition-colors text-gray-600 hover:text-lavender-600"
+                href={`#${section.id}`}
+                onClick={() => setIsMenuOpen(false)}
+                className="text-sm font-medium tracking-wide transition-colors text-gray-600 hover:text-lavender-600 cursor-pointer nav-link"
               >
                 {section.label}
-              </button>
+              </a>
             ))}
           </div>
 
@@ -85,20 +109,21 @@ function App() {
       <motion.div
         initial={false}
         animate={{ opacity: isMenuOpen ? 1 : 0, y: isMenuOpen ? 0 : -20 }}
-        className={`fixed inset-0 z-40 md:hidden ${
+        className={`fixed inset-0 z-[1000] md:hidden ${
           isMenuOpen ? "block" : "hidden"
         }`}
       >
         <div className="absolute inset-0 bg-white/95 backdrop-blur-lg" />
         <div className="relative flex flex-col items-center justify-center h-full space-y-8">
           {sections.map((section) => (
-            <button
+            <a
               key={section.id}
-              onClick={() => scrollToSection(section.id)}
-              className="text-2xl font-medium text-gray-600 hover:text-pink-600 transition-colors"
+              href={`#${section.id}`}
+              onClick={() => setIsMenuOpen(false)}
+              className="text-2xl font-medium text-gray-600 hover:text-pink-600 transition-colors cursor-pointer nav-link-mobile"
             >
               {section.label}
-            </button>
+            </a>
           ))}
         </div>
       </motion.div>
@@ -109,10 +134,11 @@ function App() {
           <Background />
           <Hero />
         </section>
-        <section id="projects" className="min-h-screen">
+
+        <section id="about" className="min-h-screen">
           <About />
         </section>
-        <section id="about" className="min-h-screen">
+        <section id="projects" className="min-h-screen">
           <Projects />
         </section>
         <section id="contact" className="min-h-screen">
