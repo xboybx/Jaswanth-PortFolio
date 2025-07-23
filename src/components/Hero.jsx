@@ -54,7 +54,7 @@ function Hero() {
               <div className="relative w-full h-full">
                 <Suspense
                   fallback={
-                    <div className="absolute inset-0 flex items-center justify-center bg-gray-900/10 rounded-xl">
+                    <div className="absolute inset-0 flex items-center justify-center bg-[#0a0a0a] rounded-xl">
                       <SkeletonLoader />
                     </div>
                   }
