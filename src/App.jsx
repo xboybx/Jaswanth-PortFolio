@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ReactDOM from "react-dom/client";
 import { motion, useScroll } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Background } from "./components/Background";

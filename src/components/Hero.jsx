@@ -200,7 +200,7 @@ function Hero() {
               <div className="absolute inset-0 z-[20] pointer-events-auto flex items-center justify-center mt-[-50px]">
                 <Suspense
                   fallback={
-                    <div className="absolute inset-0 flex items-center justify-center bg-[#0a0a0a] rounded-xl">
+                    <div className="absolute flex items-center justify-center bg-[#0a0a0a] rounded-xl">
                       <SkeletonLoader />
                     </div>
                   }
