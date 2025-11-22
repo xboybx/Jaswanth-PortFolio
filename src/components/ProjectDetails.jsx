@@ -44,7 +44,7 @@ function ProjectDetails({ onBack, project }) {
 
             <p className="text-black-100 text-lg">{project.longDescription}</p>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            {/* <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <h2 className="text-2xl font-semibold mb-4">Challenges</h2>
                 <ul className="list-disc list-inside space-y-2 text-black-300">
@@ -62,7 +62,7 @@ function ProjectDetails({ onBack, project }) {
                   ))}
                 </ul>
               </div>
-            </div>
+            </div> */}
 
             <div className="flex space-x-4 pt-4">
               {project.githubUrl && (

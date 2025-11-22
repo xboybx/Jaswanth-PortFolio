@@ -30,14 +30,14 @@ function Hero() {
   };
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative">
       {/* Hero Content */}
       <motion.div
         ref={ref}
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         variants={containerVariants}
-        className="relative z-[50] min-h-screen flex items-center justify-center px-6 lg:px-16"
+        className="relative min-h-screen flex items-center justify-center px-6 lg:px-16"
       >
         <div className="max-w-7xl mx-auto w-full">
           {/* Mobile and Tablet Layout */}

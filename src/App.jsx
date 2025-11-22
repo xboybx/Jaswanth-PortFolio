@@ -91,7 +91,10 @@ function App() {
               <a
                 key={section.id}
                 href={`#${section.id}`}
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection(section.id);
+                }}
                 className="text-sm font-medium tracking-wide transition-colors text-gray-600 hover:text-lavender-600 cursor-pointer nav-link"
               >
                 {section.label}
@@ -120,7 +123,10 @@ function App() {
             <a
               key={section.id}
               href={`#${section.id}`}
-              onClick={() => setIsMenuOpen(false)}
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection(section.id);
+              }}
               className="text-2xl font-medium text-gray-600 hover:text-pink-600 transition-colors cursor-pointer nav-link-mobile"
             >
               {section.label}
