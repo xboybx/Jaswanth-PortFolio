@@ -16,28 +16,6 @@ import {
 
 const projects = [
   {
-    title: "Manage Team Tasks App",
-    description:
-      "Full-stack task management application with real-time updates",
-    image:
-      "https://au.steelcase.com/cdn/shop/articles/manage_a_team_2000x600_crop_center.jpg?v=1601021296",
-    tags: ["Next.js", "Node.js", "Express", "MongoDB"],
-    longDescription:
-      "The app is designed for teams to manage their tasks collaboratively. Users can create tasks, assign them to team members, update task status and priority, and track overdue tasks. Notifications keep users informed about new assignments and updates.",
-    challenges: [
-      "Real-time Updates: Implementing WebSocket for live task updates",
-      "User Authentication: Secure role-based access control",
-      "Performance: Optimizing for large datasets and concurrent users",
-    ],
-    solutions: [
-      "Socket.io Integration: Real-time task updates and notifications",
-      "JWT Authentication: Secure user sessions and role management",
-      "MongoDB Indexing: Optimized database queries for better performance",
-    ],
-    githubUrl: "https://github.com/xboybx/GEN-AI_Clone",
-    liveUrl: "https://gen-ai-clone.netlify.app/",
-  },
-  {
     title: "AI CollabSphere",
     description:
       "CollabSphere is a collaborative development platform designed to help developers connect, create projects, and work together efficiently.",
@@ -122,6 +100,28 @@ const projects = [
     ],
     githubUrl: "https://github.com/xboybx/Students-Attendance-System-V2",
     liveUrl: "https://students-attendance-systems.netlify.app/",
+  },
+  {
+    title: "Manage Team Tasks App",
+    description:
+      "Full-stack task management application with real-time updates",
+    image:
+      "https://au.steelcase.com/cdn/shop/articles/manage_a_team_2000x600_crop_center.jpg?v=1601021296",
+    tags: ["Next.js", "Node.js", "Express", "MongoDB"],
+    longDescription:
+      "The app is designed for teams to manage their tasks collaboratively. Users can create tasks, assign them to team members, update task status and priority, and track overdue tasks. Notifications keep users informed about new assignments and updates.",
+    challenges: [
+      "Real-time Updates: Implementing WebSocket for live task updates",
+      "User Authentication: Secure role-based access control",
+      "Performance: Optimizing for large datasets and concurrent users",
+    ],
+    solutions: [
+      "Socket.io Integration: Real-time task updates and notifications",
+      "JWT Authentication: Secure user sessions and role management",
+      "MongoDB Indexing: Optimized database queries for better performance",
+    ],
+    githubUrl: "https://github.com/xboybx/GEN-AI_Clone",
+    liveUrl: "https://gen-ai-clone.netlify.app/",
   },
   {
     title: "Gps track",

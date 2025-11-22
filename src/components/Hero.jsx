@@ -1,9 +1,5 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { lazy, Suspense } from "react";
-import SkeletonLoader from "./SkeletonLoader";
-
-const Lanyard = lazy(() => import("../../ReactBits/Lanyard/Lanyard"));
 
 function Hero() {
   const [ref, inView] = useInView({
@@ -46,26 +42,18 @@ function Hero() {
         <div className="max-w-7xl mx-auto w-full">
           {/* Mobile and Tablet Layout */}
           <div className="lg:hidden flex flex-col items-center text-center space-y-8">
-            {/* Lanyard for Mobile/Tablet - Above content */}
+            {/* Profile Photo for Mobile/Tablet - Above content */}
             <motion.div
               variants={itemVariants}
               className="w-full h-[300px] sm:h-[300px] md:h-[450px] flex items-center justify-center"
             >
-              <div className="relative w-full h-full">
-                <Suspense
-                  fallback={
-                    <div className="absolute inset-0 flex items-center justify-center bg-[#0a0a0a] rounded-xl">
-                      <SkeletonLoader />
-                    </div>
-                  }
-                >
-                  <Lanyard
-                    position={[0, 0, 15]}
-                    fov={30}
-                    gravity={[0, -30, 0]}
-                    scale={1.5}
-                  />
-                </Suspense>
+              <div className="relative w-full h-full flex items-center justify-center">
+                <img
+                  src="/jaswanthh.jpg"
+                  alt="Profile"
+                  className="rounded-xl shadow-2xl w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
             </motion.div>
 
@@ -195,19 +183,14 @@ function Hero() {
               </motion.div>
             </motion.div>
 
-            {/* Lanyard for Desktop - Right column */}
-            <div className="relative w-full h-screen min-h-[600px] max-h-none ]">
-              <div className="absolute inset-0 z-[20] pointer-events-auto flex items-center justify-center mt-[-50px]">
-                <Suspense
-                  fallback={
-                    <div className="absolute flex items-center justify-center bg-[#0a0a0a] rounded-xl">
-                      <SkeletonLoader />
-                    </div>
-                  }
-                >
-                  <Lanyard />
-                </Suspense>
-              </div>
+            {/* Profile Photo for Desktop - Right column */}
+            <div className="relative w-full h-screen min-h-[400px] max-h-none flex items-center justify-center">
+              <img
+                src="/jaswanthh.jpg"
+                alt="Profile"
+                className="rounded-xl shadow-2xl w-[400px] h-[500px] object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
