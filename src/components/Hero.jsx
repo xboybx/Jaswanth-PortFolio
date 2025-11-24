@@ -92,7 +92,7 @@ function Hero() {
                 <a
                   href="./Jaswanth-2024-Resume.pdf"
                   target="_blank"
-                  className="btn-aurora  text-bg-red-600 bg-gradient-to-r from-black to-white "
+                  className="btn-aurora bg-gradient-to-r from-black via-white to-black bg-[200%] bg-[length:200%_200%] bg-clip-text text-transparent [text-fill-color:transparent] animate-gradient-loader [-webkit-text-fill-color:transparent] [-webkit-background-clip:text] "
                 >
                   Resume
                 </a>
