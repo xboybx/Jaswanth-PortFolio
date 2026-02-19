@@ -90,7 +90,7 @@ function Hero() {
                 className="flex flex-wrap gap-4 items-center justify-center"
               >
                 <a
-                  href="./Jaswanth-2024-Resume.pdf"
+                  href="https://ik.imagekit.io/mtkm3escy/J_Jaswanth_Dev_resume_2026.pdf"
                   target="_blank"
                   className="btn-aurora bg-gradient-to-r from-black via-white to-black bg-[200%] bg-[length:200%_200%] bg-clip-text text-transparent [text-fill-color:transparent] animate-gradient-loader [-webkit-text-fill-color:transparent] [-webkit-background-clip:text] "
                 >

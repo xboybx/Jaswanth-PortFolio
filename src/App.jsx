@@ -21,28 +21,7 @@ function App() {
     });
   }, [scrollY]);
 
-  // // Preload Lanyard component chunk early to improve first load time
-  // useEffect(() => {
-  //   import("../ReactBits/Lanyard/Lanyard").then((module) => {
-  //     // Warm up the component by creating an instance
-  //     const Lanyard = module.default;
-  //     const tempDiv = document.createElement("div");
-  //     document.body.appendChild(tempDiv);
 
-  //     const root = ReactDOM.createRoot(tempDiv);
-  //     root.render(
-  //       <React.Suspense fallback={null}>
-  //         <Lanyard />
-  //       </React.Suspense>
-  //     );
-
-  //     // Remove after a short delay
-  //     setTimeout(() => {
-  //       root.unmount();
-  //       document.body.removeChild(tempDiv);
-  //     }, 1000);
-  //   });
-  // }, []);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
