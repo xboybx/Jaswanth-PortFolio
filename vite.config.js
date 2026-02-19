@@ -7,7 +7,7 @@ export default defineConfig({
   resolve: {
     extensions: ['.js', '.jsx']
   },
-  assetsInclude: ['**/*.glb', '**/*.gltf', '**/*.bin', '**/*.png', '**/*.jpg', '**/*.jpeg'],
+  assetsInclude: ['**/*.glb', '**/*.gltf', '**/*.bin', '**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.xml', '**/*.txt'],
   server: {
     fs: {
       allow: ['.']
